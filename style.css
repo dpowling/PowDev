@@ -162,7 +162,8 @@ body.offcanvas-active{
   justify-self:end;
 }
 .btn button {
-  background: #212538;
+  background: #28405b;
+  color: #ececec;
   border: 0;
   font-size: 20px;
   padding: 10px 20px;
@@ -173,6 +174,7 @@ body.offcanvas-active{
   border-radius: 5em;
   animation-timing-function: ease-in;
   cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .btn button:hover {
   animation-name: shakeAnim;
