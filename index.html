@@ -22,7 +22,7 @@ crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow">
     <a class="navbar-brand" href="#"><img src="img/OrangeLogo.png" alt="POWDEV logo" height="36px"></a>
     <button class="navbar-toggler" type="button" data-trigger="#main_nav">
       <span class="navbar-toggler-icon"></span>
@@ -89,6 +89,30 @@ crossorigin="anonymous"></script>
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
     </div>
+
+    <div class="formContainer" style="grid-area:left4;">
+        <form action="https://formspree.io/powlingdj@hotmail.com" method="post">
+        <ul>
+          <li>
+            <input type="hidden" name="_subject" value="POWDEV's Form">
+            <input type="hidden" name="_next" value="/thanks.html" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name"> <!-- input is known as an empty tag and doesn't need a closing element
+              for that reason -->
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="e-mail" name="user_email"> <!-- by stating the type as email, it doesn't just allow normal text,
+              it has to be an appropriate email address for submission -->
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <button class="button" type="submit" value="send">Submit</button>
+        </ul>
+        </form>
+      </div>
 
 
 
