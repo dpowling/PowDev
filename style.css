@@ -10,7 +10,10 @@ body{
   overflow-x: hidden;
   width:100%;
 }
-
+.wrapper
+{
+  overflow-x: hidden; /*This is to stop AOS dissappearing */
+}
 
 
 .mainContainer
