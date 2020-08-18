@@ -84,6 +84,13 @@ body{
   font-size: 80px;
   font-family: 'Lora';
   color: #a66243;
+  text-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
+  align-self: center;
+}
+.imgCont
+{
+  justify-self: center;
+  align-self: center;
 }
 .formContainer{
   display: flex;
@@ -91,7 +98,7 @@ body{
   width: 100%; /* remember to tell the div it can use either 100% or whatever you want */
 
 }
-form {
+.formContainer form {
   width:100%;
   margin: 0 auto;
   padding: 1em;
@@ -103,6 +110,7 @@ form {
 {
   list-style: none;
   color: #ececec;
+  padding-left: 0;
 }
 .formContainer input,
 textarea {
@@ -113,6 +121,8 @@ textarea {
   border: 1px solid #999;
   border-radius: 0.4em;
   padding:10px;
+  background-color: #d4d4d4;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 .formContainer textarea{
   vertical-align: top;
@@ -135,7 +145,7 @@ textarea:focus{
     padding: 1rem 2rem;
     margin-top:20px;
     text-decoration: none;
-    background:#5a70c2;
+    background:#c47207;
     color: #ffffff;
     font-family: sans-serif;
     font-size: 1rem;
@@ -146,6 +156,7 @@ textarea:focus{
     -webkit-appearance: none;
     -moz-appearance: none;
     border-radius: 0.4em;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .formContainer button:hover,
@@ -278,3 +289,51 @@ body.offcanvas-active{
   56% {left: 0}
 }
 /*End of button */
+@media all and (max-width: 900px){
+  .mainContainer
+  {
+    display: grid;
+    grid-template-columns: minmax(300px, 600px);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+    background-color: #40434A;
+    justify-items: center;
+  }
+
+  .mainContent
+  {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: minmax(280px, 560px);
+    grid-template-rows:repeat(8, 50vh);
+    grid-gap: 0.5em;
+    grid-template-areas:
+    "left1"
+    "right1"
+    "right2"
+    "left2"
+    "left3"
+    "right3"
+    "right4"
+    "left4"
+    ;
+  }
+  .footer
+  {
+    display: grid;
+    grid-area:ft;
+    grid-template-columns:minmax(280px, 560px);
+    grid-template-areas:
+    "left"
+    "center"
+    "right"
+    "logo";
+    height: auto;
+    background-color: #8e8a84;
+    width:100%;
+    margin-top: 30px;
+  }
+}
