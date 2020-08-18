@@ -350,14 +350,19 @@ body.offcanvas-active{
   .footer
   {
     display: grid;
-    grid-template-columns:minmax(280px, 560px);
+    grid-area: ft;
+    grid-template-columns: minmax(280px, 900px);
+    grid-template-rows:repeat(4, auto);
+    grid-gap: 0.5em;
     grid-template-areas:
     "left"
     "center"
     "right"
     "logo";
     height: auto;
+    width: auto;
     margin-top: 30px;
+    text-align: center;
   }
 
 }
